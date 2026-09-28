@@ -1,0 +1,53 @@
+{
+  "manifest_version": "0.4",
+  "name": "mcp-server-weather",
+  "display_name": "MCP Weather Server",
+  "version": "1.0.0",
+  "description": "Python MCP weather server that accepts a city and province, finds coordinates using Open-Meteo geocoding, and returns current weather data through an MCP tool.",
+
+  "author": {
+    "name": "Risa Carvalho"
+  },
+
+  "homepage": "https://github.com/risacarvalho14/mcp-server-weather",
+  "documentation": "https://github.com/risacarvalho14/mcp-server-weather/blob/main/README.md",
+
+  "server": {
+  "type": "uv",
+  "entry_point": "server.py",
+  "mcp_config": {
+    "command": "uv",
+    "args": [
+      "run",
+      "server.py"
+    ]
+  }
+  },
+
+  "keywords": [
+    "mcp",
+    "weather",
+    "python",
+    "open-meteo",
+    "geocoding",
+    "ai-tools"
+  ],
+
+  "license": "MIT",
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/risacarvalho14/mcp-server-weather.git"
+  },
+
+  "compatibility": {
+    "platforms": [
+      "win32",
+      "darwin",
+      "linux"
+    ],
+    "runtimes": {
+      "python": ">=3.10.0 <4"
+    }
+  }
+}

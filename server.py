@@ -28,7 +28,6 @@ async def make_openmeteo_request(
                 headers=headers,
                 timeout=30.0
             )
-
             response.raise_for_status()
             return response.json()
 
